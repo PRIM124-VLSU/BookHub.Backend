@@ -4,12 +4,12 @@ using Microsoft.AspNetCore.Mvc;
 namespace BooksService.Controllers
 {
     /// <summary>
-    /// Контроллер для проверки аутентификации пользователей.
+    /// A controller for verifying user authentication.
     /// </summary>
     /// <remarks>
-    /// JWT токен можно сгенерировать например на http://jwtbuilder.jamiekurtz.com/
-    /// заполняя issuer как https://accounts.google.com,
-    /// а audience можно взять в GoogleJsonWebTokenConfiguration:Audience.
+    /// A JWT token can be generated for example on http://jwtbuilder.jamiekurtz.com/
+    /// filling out the issuer as https://accounts.google.com,
+    /// an audience can be taken from GoogleJsonWebTokenConfiguration: Audience.
     /// </remarks>
     [ApiController]
     public class BaseController : Controller
