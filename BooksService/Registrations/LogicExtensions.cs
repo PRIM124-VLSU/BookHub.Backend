@@ -8,7 +8,7 @@ namespace BooksService.Registrations;
 
 internal static class LogicExtensions
 {
-    public static IServiceCollection AddAuthorization(
+    public static IServiceCollection AddAuthorizationConfigs(
         this IServiceCollection services,
         IConfiguration configuration)
         => services
