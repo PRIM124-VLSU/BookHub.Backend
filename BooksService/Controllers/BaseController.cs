@@ -15,10 +15,10 @@ namespace BooksService.Controllers
     public class BaseController : Controller
     {
         [HttpGet]
-        [Route("index")]
-        public IActionResult Index()
+        [Route("hc")]
+        public IActionResult GetHC()
         {
-            return Ok("You joined Books.Service index page.");
+            return Ok("You joined Books.Service index page. HC is true");
         }
 
         [Authorize]
