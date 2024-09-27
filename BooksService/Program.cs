@@ -1,4 +1,5 @@
 using BooksService.Authentification;
+using BooksService.Registrations;
 using Microsoft.IdentityModel.JsonWebTokens;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -48,6 +49,8 @@ builder.Services.AddAuthorizationBuilder()
                 .Get<AdminAuthorizationConfiguration>()?.Admins ??
                     throw new InvalidOperationException(
                         "Admin authorization configuration is not found.")));
+
+builder.Services.AddAuthorizationConfigs(builder.Configuration);
 
 var app = builder.Build();
 
